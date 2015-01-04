@@ -21,10 +21,12 @@ DEPEND="gnome-common gtk-doc
 	pkgconfig(gtk+-3.0)
 	pkgconfig(ncurses)"
 
-PKG_NAMES="${NAME} libvte2.90_9 libvte2.90-devel girepository-Vte2.90 glade-vte"
+PKG_NAMES="${NAME} libvte2.90_9 libvte2.90-devel libvte2.90-doc girepository-Vte2.90 glade-vte"
 vte2_90_CONTENTS="usr/bin/vte*.exe usr/share/doc/"
 libvte2_90_9_CONTENTS="etc/profile.d/ usr/bin/cygvte2_90-9.dll usr/share/locale/"
-libvte2_90_devel_CONTENTS='usr/include/ usr/lib/lib* usr/lib/pkgconfig/vte-2.90.pc usr/share/gtk-doc/'
+libvte2_90_devel_CONTENTS='usr/include/ usr/lib/lib* usr/lib/pkgconfig/vte-2.90.pc'
+libvte2_90_doc_CATEGORY="Doc"
+libvte2_90_doc_CONTENTS="usr/share/gtk-doc/html/vte-2.90/"
 girepository_Vte2_90_CONTENTS="usr/*/gir*/Vte-2.90.*"
 glade_vte_REQUIRES="glade libvte2.90_9"
 glade_vte_CONTENTS="usr/share/glade/"
